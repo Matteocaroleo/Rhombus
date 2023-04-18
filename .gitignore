@@ -2,4 +2,5 @@
 !rhombus.h
 !rhombus.cpp
 !.gitignore
+!main_test.cpp
 !Doxyfile
