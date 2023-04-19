@@ -1,50 +1,50 @@
-///@file rhombus.h
-///@brief Declaration of the class Rhombus 
-/// 
+/*! \file rhombus.h
+	\brief Declaration of the class Rhombus
+
+	Details.
+*/
+
+
 #ifndef RHOMBUS_H
 #define RHOMBUS_H
 
+using namespace std;
+
 /// @class Rhombus
-/// @brief To manage an object with the shape of a rhombus
-
-
-
+/// @brief to manage an object with the shape of a rhombus
 class Rhombus
 {
 private:
-	int diagonalH;
-	int diagonalV;
-	double Side();
+	float diagH;
+	float diagV;
+
+	float Side();
 
 public:
+
 	Rhombus();
-	Rhombus(int dH, int dV);
-	Rhombus(const Rhombus& source);
+	Rhombus(float dH, float dV);
+	Rhombus(const Rhombus& r);
+
 	~Rhombus();
 
-	Rhombus& operator =(const Rhombus& r);
-	bool operator == (const Rhombus& r);
+	Rhombus& operator=(const Rhombus& r);
+	bool operator==(const Rhombus& r);
 
-	void setDim(int dH, int dV);
-	void setDiagonalH(int dH);
-	void setDiagonalV(int dV);
 
-	int getDiagonalH();
-	int getDiagonalV();
-	void getDiagonals(int& dH, int& dV);
+	void SetDim(float dH, float dV);
+	void SetDiagH(float dH);
+	void SetDiagV(float dV);
 
-	double getArea();
-	double getPerimeter();
+	void GetDiagonals(float& dH, float& dV);
+	float GetDiagH();
+	float GetDiagV();
+	float GetSide();
+
+	float GetArea();
+	float GetPerimeter();
+
+
 };
-
-
-
-
-
-
-
-
-
-
 
 #endif
