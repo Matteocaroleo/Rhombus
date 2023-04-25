@@ -119,6 +119,13 @@ float Rhombus::Side()
 	return sqrt(x);
 }
 
+///@brief Returns the side of rhombus
+///@return Side of rhombus
+float Rhombus::GetSide()
+{
+	return Side();
+}
+
 /// @brief Computes the permieter of a rhombus given the two diagonals
 /// @return Perimeter
 float Rhombus::GetPerimeter()
